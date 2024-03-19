@@ -4,7 +4,6 @@ import { Review } from "./HomeComponents/Review";
 import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
 import Spinner from 'react-bootstrap/Spinner';
-import ProgressBar from 'react-bootstrap/ProgressBar';
 
 
 
@@ -20,6 +19,10 @@ const StyledSpinnerContainer = styled.div`
   justify-content: center;
   background-color: black;
   height: 100vh;
+`
+
+const StyledHeader = styled.h1`
+  font-family: 'glitch-goblin-font';
 `
 
 export function Home() {
@@ -44,6 +47,7 @@ export function Home() {
         <Spinner animation="grow" variant="light" />
         <Spinner animation="grow" variant="dark" />
         <Spinner animation="grow" variant="light" />
+        <StyledHeader>BLESSEDUPBARBER</StyledHeader>
         <Spinner animation="grow" variant="dark" />
         <Spinner animation="grow" variant="light" />
         <Spinner animation="grow" variant="dark" />

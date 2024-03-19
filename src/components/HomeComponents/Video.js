@@ -4,7 +4,7 @@ import logo from './logo.mp4'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import styled from 'styled-components';
-
+import Spinner from 'react-bootstrap/Spinner';
 
 const StyledContainer = styled(Container)`
   background-color: black;
@@ -19,23 +19,13 @@ const StyledVideo = styled.video`
   max-width: 100%;
   max-height: 100%;
 `
-
+const StyledVideoContainer = styled(Container)`
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+`
 
 export function Video() {
-  const [videoLoaded, setVideoLoaded] = useState(false);
-
-  useEffect(() => {
-    const video = document.createElement("video");
-    video.src = logo;
-    video.addEventListener("loadeddata", () => {
-      setVideoLoaded(true);
-    });
-    return () => {
-      video.removeEventListener("loadeddata", () => {
-        setVideoLoaded(true);
-      });
-    };
-  }, []);
 
   return (
     <StyledContainer fluid>

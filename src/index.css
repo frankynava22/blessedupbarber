@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'glitch-goblin-font';
+    src: local('glitch-goblin-font'), url('./fonts/glitch-goblin-font/GlitchGoblin-2O87v.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'mouldy-cheese-font';
+    src: local('mouldy-cheese-font'), url('./fonts/mouldy-cheese-font/MouldyCheeseRegular-WyMWG.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

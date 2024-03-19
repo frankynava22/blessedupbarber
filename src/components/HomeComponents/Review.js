@@ -26,12 +26,16 @@ const StyledContainer = styled(Container)`
 
 const StyledButton = styled(Button)`
   margin-bottom: 25px;
+  font-family: 'mouldy-cheese-font';
 `
 
 const StyledSpan = styled.span`
   color: gold;
 `
 
+const StyledP = styled.p`
+  font-family: 'mouldy-cheese-font';
+`
 
 export function Review() {
   const [showMore, setShowMore] = useState(false);
@@ -73,10 +77,10 @@ export function Review() {
     return (
         <StyledLi key={review.id} className="review-list">
           <Stack direction="horizontal" gap={2}>
-            <p>{review.name}</p>
+            <StyledP>{review.name}</StyledP>
             <p>{generateStars(review.rating)}</p>
           </Stack>
-          <p>{review.review}</p>
+          <StyledP>{review.review}</StyledP>
         </StyledLi>
     )
   });
@@ -85,10 +89,10 @@ export function Review() {
     return (
         <StyledLi key={moreReviews.id} className="review-list">
           <Stack direction="horizontal" gap={2}>
-            <p>{moreReview.name}</p>
+            <mouldy-cheese-font>{moreReview.name}</mouldy-cheese-font>
             <p>{generateStars(moreReview.rating)}</p>
           </Stack>
-          <p>{moreReview.reviews}</p>
+          <mouldy-cheese-font>{moreReview.reviews}</mouldy-cheese-font>
         </StyledLi>
     )
   });
