@@ -2,7 +2,7 @@
   "name": "blessedupbarber",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/frankynava22/blessedupbarber.git",
+  "homepage": "https://frankynava22.github.io/blessedupbarber/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
